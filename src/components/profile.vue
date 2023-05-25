@@ -14,9 +14,10 @@ import Test from './test.vue'
 
 export default {
   components: {
-    PerfilDatos,
-    Test,
+    'perfil-datos': PerfilDatos,
+    'test': Test
   },
+  
   data() {
     return {
       datos: {},

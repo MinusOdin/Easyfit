@@ -1,22 +1,49 @@
 <template>
-    <nav class="row align-items-end">
+    <nav class="col-sm-12 row bg-light">
+        <p class="col-sm-1"><img src="../assets/Easyfit_logo.png" style="height: 48px; weight: 48px;" alt="Easyfit" @click="hideLocalNavigator"></p>
         <p class="col-sm-8"></p>
-        <a href="#" class="col-sm-1 p-1 py-2 text-dark">Fitness</a>
-        <a href="#" class="col-sm-1 p-1 py-2 text-dark">Alimentos</a>
-        <a href="profile.vue" class="col-sm-1 p-1 py-2 text-dark">Perfil</a>
+        <a href="#" @click="showFitness" class="col-sm-1 p-1 py-2 text-dark">Fitness</a>
+        <a href="#" @click="showFood" class="col-sm-1 p-1 py-2 text-dark">Alimentos</a>
+        <a href="#" class="col-sm-1 p-1 py-2 text-dark">Perfil</a>
 
     </nav>
 </template>
 
 <script>
 export default {
-    name: 'GlobalNavigator'
+    name: 'GlobalNavigator',
+    methods: {
+        showFitness: function() {
+            this.$emit('show-local-navigator', {
+                local: true,
+                fitness: true
+            });
+        },
+
+        showFood: function() {
+            this.$emit('show-local-navigator', {
+                local: true,
+                fitness: false
+            });
+        },
+
+        hideLocalNavigator: function() {
+            this.$emit('show-local-navigator', {
+                local: false,
+                fitness: false
+            })
+        }
+    }
 }
 </script>
 
 <style>
 
 body {
-    background-color: /*definir coloe*/#FFFFFF;
+    background-color:#FFFFFF;
+}
+
+img:hover {
+    cursor: pointer;
 }
 </style>

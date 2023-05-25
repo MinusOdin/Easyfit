@@ -48,7 +48,7 @@
     },
     methods:{
         guardarCambios(){
-            this.$emit('actualzar-datos', this.datos);
+            this.$emit('actualizar-datos', this.datos);
         },
     },
   };

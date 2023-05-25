@@ -14,12 +14,7 @@ export default {
 <style>
 img {
     height: 200px;
-    width: 300px;
     object-fit: cover;
 }
 
-div {
-    display: grid;
-    align-items: center;
-}
 </style>
