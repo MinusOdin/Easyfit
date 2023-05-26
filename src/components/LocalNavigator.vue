@@ -11,7 +11,6 @@ export default {
     name: 'LocalNavigator',
     props: ['data']
 }
-
 </script>
 
 <style>
