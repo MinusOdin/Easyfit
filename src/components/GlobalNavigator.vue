@@ -1,11 +1,10 @@
 <template>
     <nav class="col-sm-12 row bg-light">
         <p class="col-sm-1"><img src="../assets/Easyfit_logo.png" style="height: 48px; weight: 48px;" alt="Easyfit" @click="hideLocalNavigator"></p>
-        <p class="col-sm-8"></p>
+        <p class="col-sm-7"></p>
         <a href="#" @click="showFitness" class="col-sm-1 p-1 py-2 text-dark">Fitness</a>
         <a href="#" @click="showFood" class="col-sm-1 p-1 py-2 text-dark">Alimentos</a>
-        <a href="#" class="col-sm-1 p-1 py-2 text-dark">Perfil</a>
-
+        <a href="#" class="col-sm-1 p-1 py-2 text-dark font-weight-bold">Perfil</a>
     </nav>
 </template>
 
@@ -38,11 +37,6 @@ export default {
 </script>
 
 <style>
-
-body {
-    background-color:#FFFFFF;
-}
-
 img:hover {
     cursor: pointer;
 }
