@@ -1,43 +1,38 @@
 <template>
     <div>
       <h2>Datos del Perfil</h2>
-      <p>Nombre: 
-        <span v-if="editable">
-          <input type="text" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.nombre }}</span>
-        </p>
-      <p>Edad: 
-        <span v-if="editable">
-          <input type="number" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.edad }}</span>
-    </p>
-      <p>Email: 
-        <span v-if="editable">
-          <input type="text" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.email }}</span>
-    </p>
-      <p>Sexo: 
-        <span v-if="editable">
-          <input type="text" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.sexo }}</span></p>
-      <p>Altura: 
-        <span v-if="editable">
-          <input type="text" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.altura }}</span>
-    </p>
-      <p>Peso: 
-        <span v-if="editable">
-          <input type="text" v-model="datos.nombre" />
-        </span>
-        <span v-else>{{ datos.peso }}</span>
-    </p>
+      <form @submit.prevent="guardarCambios">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" v-model="datos.nombre" :disabled="!editable">
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label>
+          <input type="number" class="form-control" id="edad" v-model="datos.edad" :disabled="!editable">
+      </div>
+      <div class="form-group">
+          <label for="email">Correo Electronico:</label>
+          <input type="email" class="form-control" id="email" v-model="datos.email" :disabled="!editable">
+        </div>
+        <div class="form-group">
+          <label for="sexo">Sexo: </label>
+          <select class="form-control" id="sexo" v-model="datos.sexo" :disabled="!editable">
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="altura">Altura en cm:</label>
+          <input type="number" class="form-control" id="altura" v-model="datos.altura" :disabled="!editable">
+      </div>
+      <div class="form-group">
+          <label for="peso">Peso en kg:</label>
+          <input type="number" class="form-control" id="peso" v-model="datos.peso" :disabled="!editable">
+      </div>
     <button @click="guardarCambios" v-if="editable">Guardar Cambios</button>
-    </div>
+  </form>  
+  </div>
   </template>
   
   <script>

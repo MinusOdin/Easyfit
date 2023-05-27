@@ -7,6 +7,7 @@
       <button @click="guardarPerfil" v-else>Guardar Perfil</button>
     </div>
   </template>
+
  
 <script>
 import PerfilDatos from './PerfilDatos.vue'
