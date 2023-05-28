@@ -1,6 +1,6 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Inicio from './components/InicioPag.vue';
-import Fitness from './components/FitnessInicio.vue';
+import Ejercicios from './components/Ejercicios.vue'
 import Nutricion from './components/NutricionInicio.vue';
 //import Perfil from './components/PerfilView.vue'
 
@@ -13,11 +13,6 @@ const router = createRouter({
             component: Inicio,
          },
         {
-             path: '/fitness',
-             name: 'Fitness',
-            component: Fitness
-        },
-        {
              path: '/nutricion',
              name: 'Nutricion',
              component: Nutricion,
@@ -25,7 +20,7 @@ const router = createRouter({
         {
             path: '/ejercicios',
             name: 'Ejercicios'
-            component: /* TODO */,
+            component: Ejercicios,
         },
         {
             path: '/ejercicios/fuerza',
