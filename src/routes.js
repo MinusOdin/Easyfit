@@ -1,6 +1,6 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Inicio from './components/InicioPag.vue';
-import Ejercicios from './components/Ejercicios.vue'
+import EasyfitEjercicios from './components/EasyfitEjercicios.vue'
 import Nutricion from './components/NutricionInicio.vue';
 import Perfil from './components/PerfilView.vue';
 import Test from './components/TestPerfil.vue';
@@ -21,7 +21,7 @@ const router = createRouter({
         {
             path: '/ejercicios',
             name: 'Ejercicios',
-            component: Ejercicios,
+            component: EasyfitEjercicios,
         },
         {
             path: '/ejercicios/fuerza',

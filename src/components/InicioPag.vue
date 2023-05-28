@@ -54,24 +54,12 @@
 
 <script>
 import EasyfitBanner from './EasyfitBanner.vue'
-import EasyfitKeyPoints from './EasyfitKeyPoint.vue'
+import KeypointsCards from './KeypointsCards.vue'
 
 export default {
   components: {
     'easyfit-banner': EasyfitBanner,
-    'key-point': EasyfitKeyPoints,
+    'key-point': KeypointsCards
   },
-  data: function() {
-        return {
-        local: false,
-        fitness: false,
-        profile: false,
-        food: false,
-        fitnessData: ['Introducción', 'Explosividad', 'Fuerza', 'Velocidad', 'Volumen', 'Agilidad'],
-        foodData: ['Introducción', 'Proteinas', 'Carbohidratos', 'Grasas', 'Vitaminas', 'Agua'],
-        lorem_ipsum_mid: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis ullamcorper risus. Sed commodo congue erat, ac placerat metus semper.',
-        lorem_ipsum_large: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dapibus diam sollicitudin aliquam. Sed posuere commodo nibh ac laoreet. Sed sit amet congue nisi. Integer sed massa libero. Nullam tempus risus eu lorem condimentum tempor. Aenean eu iaculis diam, eu vulputate enim. Aenean imperdiet elit quis tortor pulvinar venenatis. Proin vel blandit purus, eu aliquet velit. In bibendum cursus nibh nec rhoncus. Sed non justo rutrum, tempus tortor sed, efficitur ex. '
-        };
-    },
 }
 </script>
