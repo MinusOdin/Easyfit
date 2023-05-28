@@ -24,38 +24,38 @@ const router = createRouter({
         },
         {
             path: '/ejercicios',
-            name: 'Ejercicios'
-            component: /* TODO */,
+            name: 'Ejercicios',
+            //component: /* TODO */,
         },
         {
             path: '/ejercicios/fuerza',
-            name: 'Ejercicios de Fuerza'
-            component: /* TODO */,
+            name: 'Ejercicios de Fuerza',
+            //component: /* TODO */,
         },
         {
             path: '/ejercicios/explosividad',
-            name: 'Ejercicios de explosividad'
-            component: /* TODO */,
+            name: 'Ejercicios de explosividad',
+            //component: /* TODO */,
         },
         {
             path: '/ejercicios/resistencia',
-            name: 'Ejercicios de resistencia'
-            component: /* TODO */,
+            name: 'Ejercicios de resistencia',
+            //component: /* TODO */,
         },
         {
             path: '/rutinas',
-            name: 'Rutinas'
-            component: /* TODO */,
+            name: 'Rutinas',
+            //component: /* TODO */,
         },
         {
             path: '/rutinas/volumen',
-            name: 'Rutinas de volumen'
-            component: /* TODO */,
+            name: 'Rutinas de volumen',
+            //component: /* TODO */,
         },
         {
             path: '/ejercicios/definicion',
-            name: 'Rutinas de definición'
-            component: /* TODO */,
+            name: 'Rutinas de definición',
+            //component: /* TODO */,
         }
         // {
         //     path: '/perfil',
