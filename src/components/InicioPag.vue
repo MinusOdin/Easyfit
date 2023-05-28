@@ -63,3 +63,30 @@ export default {
   },
 }
 </script>
+
+<style>
+p {
+    margin: 0;
+    font-weight: bolder;
+}
+
+a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6347;
+}
+
+#button1 {
+  background-color:#FF7F50;
+  color: white;
+  padding: 1rem;
+}
+
+#button1:hover {
+  background-color:#FF6347;
+  color: white;
+}
+</style>

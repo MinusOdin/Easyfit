@@ -25,19 +25,29 @@ export default {
                     link: '/ejercicios'
                 },
                 {
-                    title: 'Fuerza',
+                    title: 'Carbohidratos',
                     subtitles: [],
-                    link: '/ejercicios/fuerza'
+                    link: '/ejercicios/carbohidratos'
                 },
                 {
-                    title: 'Explosividad',
+                    title: 'Proteinas',
                     subtitles: [],
-                    link: '/ejercicios/explosividad'
+                    link: '/ejercicios/proteinas'
                 },
                 {
-                    title: 'Resistencia',
+                    title: 'Grasas',
                     subtitles: [],
-                    link: '/ejercicios/resistencia'
+                    link: '/ejercicios/grasas'
+                },
+                {
+                    title: 'Vitaminas',
+                    subtitles: [],
+                    link: '/ejercicios/vitaminas'
+                },
+                {
+                    title: 'Agua',
+                    subtitles: [],
+                    link: '/ejercicios/agua'
                 }
             ]
         };

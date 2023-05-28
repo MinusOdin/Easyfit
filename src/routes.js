@@ -1,7 +1,7 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Inicio from './components/InicioPag.vue';
 import EasyfitEjercicios from './components/EasyfitEjercicios.vue'
-import Nutricion from './components/NutricionInicio.vue';
+import EasyfitNutricion from './components/EasyfitNutricion.vue';
 import Perfil from './components/PerfilView.vue';
 import Test from './components/TestPerfil.vue';
 
@@ -16,7 +16,7 @@ const router = createRouter({
         {
              path: '/nutricion',
              name: 'Nutricion',
-             component: Nutricion,
+             component: EasyfitNutricion,
         },
         {
             path: '/ejercicios',

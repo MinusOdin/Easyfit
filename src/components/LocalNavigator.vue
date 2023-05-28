@@ -1,10 +1,10 @@
 <template>
-    <nav class="nav flex-column">
-        <ul class="list-group">
-            <li class="list-group-item nav-link border-0" v-for="item in data" :key="item">
+    <nav class="nav bg-light">
+        <ul class="list-group text-start border-end rounded-0 bg-light">
+            <li class="list-group-item border-0" v-for="item in data" :key="item">
                 <router-link to="{{ item.link }}">{{ item.title }}</router-link>
                 <ul class="list-group" v-if="item.subtitles">
-                    <li class="list-group-item nav-link border-0" v-for="subtitle in item.subtitles" :key="subtitle">{{ subtitle }}</li>
+                    <li class="list-group-item border-0" v-for="subtitle in item.subtitles" :key="subtitle">{{ subtitle }}</li>
                 </ul>
             </li>
         </ul>
@@ -20,7 +20,6 @@ export default {
             required: true
         }
     },
-    
 }
 </script>
 
