@@ -2,7 +2,8 @@ import {createRouter, createWebHashHistory} from 'vue-router';
 import Inicio from './components/InicioPag.vue';
 import Fitness from './components/FitnessInicio.vue';
 import Nutricion from './components/NutricionInicio.vue';
-//import Perfil from './components/PerfilView.vue'
+import Perfil from './components/PerfilView.vue';
+import Test from './components/TestPerfil.vue';
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -56,12 +57,17 @@ const router = createRouter({
             path: '/ejercicios/definicion',
             name: 'Rutinas de definición',
             //component: /* TODO */,
+        },
+        {
+             path: '/perfil',
+             name: 'Perfil',
+             component: Perfil,
+        },
+        {
+            path: '/test',
+            name: 'Test',
+            component: Test,
         }
-        // {
-        //     path: '/perfil',
-        //     name: 'Perfil',
-        //     component: Perfil,
-        // }
     ]
 });
 

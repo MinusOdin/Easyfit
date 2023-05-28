@@ -15,6 +15,7 @@
                         </div>
                     </li>
                     <router-link to="/nutricion" class="nav-item nav-link text-dark">Nutricion</router-link>
+                    <router-link to="/perfil" class="nav-item nav-link text-dark">Perfil</router-link>
                 </div>
             </div>
         </div>
