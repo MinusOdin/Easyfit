@@ -3,7 +3,7 @@
         <easyfit-banner class="row"></easyfit-banner>
 
         <!-- Que es Easyfit -->
-        <div class="row my-3 m-0 ps-5" style="text-align: left;">
+        <div class="row my-3 m-0 py-3 px-5" style="text-align: left;">
         <img class="col-sm-4 rounded ms-1 p-0" src="../assets/man.jpg" alt="squad_man">
         <div class="col-sm-7 ms-5">
             <h2>Que es Easyfit</h2>
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Porque usar Easyfit -->
-        <div class="row my-3 m-0 ps-" style="text-align: left;">
+        <div class="row my-3 m-0 py-3 px-5" style="text-align: left;">
         <div class="col-sm-7">
             <h2>Porque usar Easyfit</h2>
             <p>{{ this.lorem_ipsum_large }}</p>
@@ -25,7 +25,7 @@
         <!-- KeyPoints -->
         <div class="row my-3 p-0">
         <h2>Conceptos Clave</h2>
-        <key-point class="col-sm-4" :title="'Fitness'" :text="this.lorem_ipsum_mid"></key-point>
+        <key-point class="col-sm-4" :title="'Rutinas'" :text="this.lorem_ipsum_mid"></key-point>
         <key-point class="col-sm-4" :title="'Nutrición'" :text="this.lorem_ipsum_mid"></key-point>
         <key-point class="col-sm-4" :title="'Salud'" :text="this.lorem_ipsum_mid"></key-point>
         </div>

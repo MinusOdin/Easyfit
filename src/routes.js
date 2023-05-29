@@ -4,6 +4,9 @@ import EasyfitEjercicios from './components/EasyfitEjercicios.vue'
 import EasyfitNutricion from './components/EasyfitNutricion.vue';
 import Perfil from './components/PerfilView.vue';
 import Test from './components/TestPerfil.vue';
+import EasyfitRutinas from './components/EasyfitRutinas.vue';
+import RutinasVolumen from './components/RutinasVolumen.vue';
+import RutinasDefinicion from './components/RutinasDefinicion.vue';
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -41,17 +44,17 @@ const router = createRouter({
         {
             path: '/rutinas',
             name: 'Rutinas',
-            //component: /* TODO */,
+            component: EasyfitRutinas,
         },
         {
             path: '/rutinas/volumen',
             name: 'Rutinas de volumen',
-            //component: /* TODO */,
+            component: RutinasVolumen,
         },
         {
-            path: '/ejercicios/definicion',
+            path: '/rutinas/definicion',
             name: 'Rutinas de definición',
-            //component: /* TODO */,
+            component: RutinasDefinicion,
         },
         {
              path: '/perfil',

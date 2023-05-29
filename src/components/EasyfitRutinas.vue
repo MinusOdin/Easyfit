@@ -82,7 +82,7 @@
 import LocalNavigator from './LocalNavigator.vue'
 
 export default {
-    name: 'EasyfitEjercicios',
+    name: 'EasyfitRutinas',
 
     components: {
         'local-nav': LocalNavigator
@@ -94,25 +94,24 @@ export default {
                 {
                     title: 'Introducción',
                     subtitles: [],
-                    link: '/ejercicios'
+                    link: '/rutinas'
                 },
                 {
-                    title: 'Fuerza',
+                    title: 'Volumen',
                     subtitles: [],
-                    link: '/ejercicios/fuerza'
+                    link: '/rutinas/volumen'
                 },
                 {
-                    title: 'Explosividad',
+                    title: 'Definición',
                     subtitles: [],
-                    link: '/ejercicios/explosividad'
+                    link: '/rutinas/definicion'
                 },
-                {
-                    title: 'Resistencia',
-                    subtitles: [],
-                    link: '/ejercicios/resistencia'
-                }
             ]
         };
     }
-};
+}
 </script>
+
+<style>
+
+</style>
