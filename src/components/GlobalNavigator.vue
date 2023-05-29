@@ -1,40 +1,27 @@
 <template>
-    <nav class="col-sm-12 row bg-light">
-        <p id="logo" class="col-sm-1 p-0 ms-3" @click="hideLocalNavigator"><img src="../assets/Easyfit_logo.png" style="height: 48px;" alt="Easyfit"> Easyfit</p>
-        <p class="col-sm-7"></p>
-        <a href="#" @click="showFitness" class="col-sm-1 p-1 py-2 text-dark">Fitness</a>
-        <a href="#" @click="showFood" class="col-sm-1 p-1 py-2 text-dark">Alimentos</a>
-        <a href="#" class="col-sm-1 p-1 py-2 text-dark">Perfil</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <router-link to="/" class="navbar-brand"><img src="../assets/Easyfit_logo.png" style="height: 48px;" alt="Easyfit">Easyfit</router-link>
+            <button class="navbar-toggler" type="button" data-bg-toggle="collapse" data-bg-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <router-link to="/fitness" role="button" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">Fitness</router-link>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Ejercios</a>
+                            <a class="dropdown-item" href="#">Rutinas</a>
+                        </div>
+                    </li>
+                    <router-link to="/nutricion" class="nav-item nav-link text-dark">Nutricion</router-link>
+                </div>
+            </div>
+        </div>
     </nav>
+
 </template>
 
-<script>
-export default {
-    name: 'GlobalNavigator',
-    methods: {
-        showFitness: function() {
-            this.$emit('show-local-navigator', {
-                local: true,
-                fitness: true
-            });
-        },
-
-        showFood: function() {
-            this.$emit('show-local-navigator', {
-                local: true,
-                fitness: false
-            });
-        },
-
-        hideLocalNavigator: function() {
-            this.$emit('show-local-navigator', {
-                local: false,
-                fitness: false
-            })
-        }
-    }
-}
-</script>
 
 <style>
 #logo:hover {
