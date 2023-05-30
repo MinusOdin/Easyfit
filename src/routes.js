@@ -1,12 +1,21 @@
+// Vue Router import
 import {createRouter, createWebHashHistory} from 'vue-router';
-import Inicio from './components/InicioPag.vue';
-import EasyfitEjercicios from './components/EasyfitEjercicios.vue'
-import EasyfitNutricion from './components/EasyfitNutricion.vue';
-import Perfil from './components/PerfilView.vue';
+
+// Components import
 import Test from './components/TestPerfil.vue';
-import EasyfitRutinas from './components/EasyfitRutinas.vue';
+import Perfil from './components/PerfilView.vue';
+import Inicio from './components/EasyfitInicio.vue';
+import RutinasInicio from './components/RutinasInicio.vue';
 import RutinasVolumen from './components/RutinasVolumen.vue';
+import EasyfitRutinas from './components/EasyfitRutinas.vue';
+import NutricionInicio from './components/NutricionInicio.vue';
+import EjerciciosFuerza from './components/EjerciciosFuerza.vue';
+import EasyfitNutricion from './components/EasyfitNutricion.vue';
+import EjerciciosInicio from './components/EjerciciosInicio.vue';
+import EasyfitEjercicios from './components/EasyfitEjercicios.vue';
 import RutinasDefinicion from './components/RutinasDefinicion.vue';
+import EjerciciosResistencia from './components/EjerciciosResistencia.vue';
+import EjerciciosExplosividad from './components/EjerciciosExplosividad.vue';
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -19,42 +28,42 @@ const router = createRouter({
         {
              path: '/nutricion',
              name: 'Nutricion',
-             component: EasyfitNutricion,
+             components: {default: EasyfitNutricion, nutricionContent: NutricionInicio}
         },
         {
             path: '/ejercicios',
             name: 'Ejercicios',
-            component: EasyfitEjercicios,
+            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosInicio}
         },
         {
             path: '/ejercicios/fuerza',
             name: 'Ejercicios de Fuerza',
-            //component: /* TODO */,
+            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosFuerza},
         },
         {
             path: '/ejercicios/explosividad',
             name: 'Ejercicios de explosividad',
-            //component: /* TODO */,
+            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosExplosividad}
         },
         {
             path: '/ejercicios/resistencia',
             name: 'Ejercicios de resistencia',
-            //component: /* TODO */,
+            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosResistencia}
         },
         {
             path: '/rutinas',
             name: 'Rutinas',
-            component: EasyfitRutinas,
+            components: {default: EasyfitRutinas, rutinasContent: RutinasInicio}
         },
         {
             path: '/rutinas/volumen',
             name: 'Rutinas de volumen',
-            component: RutinasVolumen,
+            components: {default: EasyfitRutinas, rutinasContent: RutinasVolumen}
         },
         {
             path: '/rutinas/definicion',
             name: 'Rutinas de definición',
-            component: RutinasDefinicion,
+            components: {default: EasyfitRutinas, rutinasContent: RutinasDefinicion}
         },
         {
              path: '/perfil',
