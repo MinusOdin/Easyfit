@@ -3,7 +3,7 @@
         <easyfit-banner class="row"></easyfit-banner>
 
         <!-- Que es Easyfit -->
-        <div class="row my-3 m-0 ps-5" style="text-align: left;">
+        <div class="row my-3 m-0 py-3 px-5" style="text-align: left;">
         <img class="col-sm-4 rounded ms-1 p-0" src="../assets/man.jpg" alt="squad_man">
         <div class="col-sm-7 ms-5">
             <h2>Que es Easyfit</h2>
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Porque usar Easyfit -->
-        <div class="row my-3 m-0 ps-" style="text-align: left;">
+        <div class="row my-3 m-0 py-3 px-5" style="text-align: left;">
         <div class="col-sm-7">
             <h2>Porque usar Easyfit</h2>
             <p>{{ this.lorem_ipsum_large }}</p>
@@ -25,7 +25,7 @@
         <!-- KeyPoints -->
         <div class="row my-3 p-0">
         <h2>Conceptos Clave</h2>
-        <key-point class="col-sm-4" :title="'Fitness'" :text="this.lorem_ipsum_mid"></key-point>
+        <key-point class="col-sm-4" :title="'Rutinas'" :text="this.lorem_ipsum_mid"></key-point>
         <key-point class="col-sm-4" :title="'Nutrición'" :text="this.lorem_ipsum_mid"></key-point>
         <key-point class="col-sm-4" :title="'Salud'" :text="this.lorem_ipsum_mid"></key-point>
         </div>
@@ -54,24 +54,39 @@
 
 <script>
 import EasyfitBanner from './EasyfitBanner.vue'
-import EasyfitKeyPoints from './EasyfitKeyPoint.vue'
+import KeypointsCards from './KeypointsCards.vue'
 
 export default {
   components: {
     'easyfit-banner': EasyfitBanner,
-    'key-point': EasyfitKeyPoints,
+    'key-point': KeypointsCards
   },
-  data: function() {
-        return {
-        local: false,
-        fitness: false,
-        profile: false,
-        food: false,
-        fitnessData: ['Introducción', 'Explosividad', 'Fuerza', 'Velocidad', 'Volumen', 'Agilidad'],
-        foodData: ['Introducción', 'Proteinas', 'Carbohidratos', 'Grasas', 'Vitaminas', 'Agua'],
-        lorem_ipsum_mid: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis ullamcorper risus. Sed commodo congue erat, ac placerat metus semper.',
-        lorem_ipsum_large: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dapibus diam sollicitudin aliquam. Sed posuere commodo nibh ac laoreet. Sed sit amet congue nisi. Integer sed massa libero. Nullam tempus risus eu lorem condimentum tempor. Aenean eu iaculis diam, eu vulputate enim. Aenean imperdiet elit quis tortor pulvinar venenatis. Proin vel blandit purus, eu aliquet velit. In bibendum cursus nibh nec rhoncus. Sed non justo rutrum, tempus tortor sed, efficitur ex. '
-        };
-    },
 }
 </script>
+
+<style>
+p {
+    margin: 0;
+    font-weight: bolder;
+}
+
+a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6347;
+}
+
+#button1 {
+  background-color:#FF7F50;
+  color: white;
+  padding: 1rem;
+}
+
+#button1:hover {
+  background-color:#FF6347;
+  color: white;
+}
+</style>

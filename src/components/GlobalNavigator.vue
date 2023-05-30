@@ -8,18 +8,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <router-link to="/fitness" role="button" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">Fitness</router-link>
+                        <router-link to="" role="button" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">Fitness</router-link>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ejercios</a>
-                            <a class="dropdown-item" href="#">Rutinas</a>
+                            <router-link class="dropdown-item" to="/ejercicios">Ejercios</router-link>
+                            <router-link class="dropdown-item" to="/rutinas">Rutinas</router-link>
                         </div>
                     </li>
                     <router-link to="/nutricion" class="nav-item nav-link text-dark">Nutricion</router-link>
+                    <router-link to="/perfil" class="nav-item nav-link text-dark">Perfil</router-link>
                 </div>
             </div>
         </div>
     </nav>
-
 </template>
 
 
