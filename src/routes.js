@@ -23,7 +23,7 @@ const router = createRouter({
         { 
             path: '/', 
             name: 'Inici',
-            component: Inicio,
+            component: Inicio
          },
         {
              path: '/nutricion',
@@ -33,37 +33,51 @@ const router = createRouter({
         {
             path: '/ejercicios',
             name: 'Ejercicios',
-            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosInicio}
-        },
-        {
-            path: '/ejercicios/fuerza',
-            name: 'Ejercicios de Fuerza',
-            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosFuerza},
-        },
-        {
-            path: '/ejercicios/explosividad',
-            name: 'Ejercicios de explosividad',
-            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosExplosividad}
-        },
-        {
-            path: '/ejercicios/resistencia',
-            name: 'Ejercicios de resistencia',
-            components: {default: EasyfitEjercicios, ejerciciosContent: EjerciciosResistencia}
+            component: EasyfitEjercicios,
+            children: [
+                {
+                    path: '',
+                    name: 'EjerciciosInicio',
+                    component: EjerciciosInicio
+                },
+                {
+                    path: '/fuerza',
+                    name: 'EjerciciosFuerza',
+                    component: EjerciciosFuerza
+                },
+                {
+                    path: '/explosividad',
+                    name: 'EjerciciosExplosividad',
+                    component: EjerciciosExplosividad
+                },
+                {
+                    path: '/resistencia',
+                    name: 'EjerciciosResistencia',
+                    component: EjerciciosResistencia
+                }
+            ]
         },
         {
             path: '/rutinas',
             name: 'Rutinas',
-            components: {default: EasyfitRutinas, rutinasContent: RutinasInicio}
-        },
-        {
-            path: '/rutinas/volumen',
-            name: 'Rutinas de volumen',
-            components: {default: EasyfitRutinas, rutinasContent: RutinasVolumen}
-        },
-        {
-            path: '/rutinas/definicion',
-            name: 'Rutinas de definición',
-            components: {default: EasyfitRutinas, rutinasContent: RutinasDefinicion}
+            component: EasyfitRutinas,
+            children: [
+                {
+                    path: '',
+                    name: 'RutinasInicio',
+                    component: RutinasInicio
+                },
+                {
+                    path: '/volumen',
+                    name: 'RutinasVolumen',
+                    component: RutinasVolumen
+                },
+                {
+                    path: '/definicion',
+                    name: 'RutinasDefinicion',
+                    component: RutinasDefinicion
+                }
+            ]
         },
         {
              path: '/perfil',

@@ -7,6 +7,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Sentadilla</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
@@ -14,6 +15,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Palanca Estática</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
@@ -21,6 +23,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Flexiones</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
@@ -28,6 +31,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Fondo de triceps</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
             </div>
@@ -37,6 +41,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Sentadilla</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
@@ -44,13 +49,15 @@
                     <div class="card-body">
                         <h5 class="card-title">Palanca Estática</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825_1280.jpg" class="card-img-top">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfF_RNoZDFg30kBkB3hWWgKkog3wBa9iy1bg&usqp=CAU" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Flexiones</h5>
+                        <h5 class="card-title">Flexiones con una mano</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
                 <div class="card">
@@ -58,6 +65,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Fondo de triceps</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
+                        <button class="btn btn-primary rounded-circle">+</button>
                     </div>
                 </div>
             </div>

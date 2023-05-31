@@ -32,4 +32,17 @@ export default {
   text-align: center;
   margin-top: 60px;
 }
+
+a{
+  text-decoration: none;
+  color: #303030;
+}
+
+a:hover{
+  color: #FF4500;
+}
+
+router-link:hover {
+  color: #FF4500;
+}
 </style>

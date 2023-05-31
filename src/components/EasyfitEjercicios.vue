@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <local-nav class="container-fluid col-sm-1 p-0 m-0" :data="local_nav_data"></local-nav>
-            <router-view class="col-sm-11" name="ejerciciosContent"></router-view>
+            <router-view class="col-sm-11"></router-view>
         </div>
     </div>
 </template>
@@ -28,17 +28,17 @@ export default {
                 {
                     title: 'Fuerza',
                     subtitles: [],
-                    link: '/ejercicios/fuerza'
+                    link: '/fuerza'
                 },
                 {
                     title: 'Explosividad',
                     subtitles: [],
-                    link: '/ejercicios/explosividad'
+                    link: '/explosividad'
                 },
                 {
                     title: 'Resistencia',
                     subtitles: [],
-                    link: '/ejercicios/resistencia'
+                    link: '/resistencia'
                 }
             ]
         };
