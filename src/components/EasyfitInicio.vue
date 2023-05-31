@@ -35,21 +35,6 @@
         <key-point class="col-sm-4" :title="'Series'" :text="this.lorem_ipsum_mid"></key-point>
         </div>
     </article>
-
-    <!-- Fitness Page
-    <article class="row container-fluid" v-if="local && fitness">
-        <local-navigator class="row col-sm-1" :data="getData()"></local-navigator>
-    </article>
-
-     Food Page 
-    <article class="row container-fluid" v-if="local && food">
-        <local-navigator class="row col-sm-1" :data="getData()"></local-navigator>
-    </article>
-
-     Profile Page 
-    <article class="row container-fluid" v-if="local && profile">
-        <local-navigator class="row" :data="getData()"></local-navigator>
-    </article> -->
 </template>
 
 <script>
@@ -57,36 +42,20 @@ import EasyfitBanner from './EasyfitBanner.vue'
 import KeypointsCards from './KeypointsCards.vue'
 
 export default {
-  components: {
-    'easyfit-banner': EasyfitBanner,
-    'key-point': KeypointsCards
-  },
+    name:'EasyfitInicio',
+    components: {
+        'easyfit-banner': EasyfitBanner,
+        'key-point': KeypointsCards
+    },
+
+    data: function() {
+        return {
+            lorem_ipsum_large: '',
+        }
+    }
 }
 </script>
 
 <style>
-p {
-    margin: 0;
-    font-weight: bolder;
-}
 
-a {
-    color: #FF7F50;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FF6347;
-}
-
-#button1 {
-  background-color:#FF7F50;
-  color: white;
-  padding: 1rem;
-}
-
-#button1:hover {
-  background-color:#FF6347;
-  color: white;
-}
 </style>

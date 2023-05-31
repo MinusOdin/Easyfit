@@ -1,20 +1,20 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <local-nav class="col-sm-1" :data="local_nav_data"></local-nav>
-            <router-view name="ejerciciosContent"></router-view>
+            <local-nav class="container-fluid col-sm-1 p-0 m-0" :data="local_nav_data"></local-nav>
+            <router-view class="col-sm-11" name="ejerciciosContent"></router-view>
         </div>
     </div>
 </template>
 
 <script>
-import LocalNavigator from './LocalNavigator.vue'
+import LocalNavigator from './LocalNavigator.vue';
 
 export default {
     name: 'EasyfitEjercicios',
 
     components: {
-        'local-nav': LocalNavigator
+        'local-nav': LocalNavigator,
     },
 
     data: function() {

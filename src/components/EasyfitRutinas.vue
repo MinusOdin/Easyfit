@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <local-nav class="col-sm-1" :data="local_nav_data"></local-nav>
+            <local-nav class="container-fluid col-sm-1 p-0 m-0" :data="local_nav_data"></local-nav>
             <router-view class="col-sm-11" name="rutinasContent"></router-view>
         </div>
     </div>

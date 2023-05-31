@@ -2,7 +2,9 @@
   <header class="row sticky-top bg-light border-bottom m-0 p-2">
     <global-navigator class="col-sm-12"></global-navigator>
   </header>
-  <router-view></router-view>
+  <main>
+    <router-view></router-view>
+  </main>
   <footer class="container-fluid row m-0 p-3 bg-light border-top">
     <easyfit-footer></easyfit-footer>
   </footer>
@@ -24,7 +26,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Cabinet Grotesk', 'Satoshi';
+  font-family: Helvetica, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

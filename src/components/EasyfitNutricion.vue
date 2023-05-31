@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <div class="row">
             <local-nav class="col-sm-1" :data="local_nav_data"></local-nav>
-            
+            <article class="col-sm-11">
+                
+            </article>
         </div>
     </div>
 </template>
