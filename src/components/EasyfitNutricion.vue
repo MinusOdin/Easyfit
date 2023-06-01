@@ -28,27 +28,27 @@ export default {
                 {
                     title: 'Carbohidratos',
                     subtitles: [],
-                    link: '/nutricion/carbohidratos'
+                    link: '/carbohidratos'
                 },
                 {
                     title: 'Proteinas',
                     subtitles: [],
-                    link: '/nutricion/proteinas'
+                    link: '/proteinas'
                 },
                 {
                     title: 'Grasas',
                     subtitles: [],
-                    link: '/nutricion/grasas'
+                    link: '/grasas'
                 },
                 {
                     title: 'Vitaminas',
                     subtitles: [],
-                    link: '/nutricion/vitaminas'
+                    link: '/vitaminas'
                 },
                 {
                     title: 'Agua',
                     subtitles: [],
-                    link: '/nutricion/agua'
+                    link: '/agua'
                 }
             ]
         };

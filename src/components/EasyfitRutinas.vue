@@ -28,12 +28,12 @@ export default {
                 {
                     title: 'Volumen',
                     subtitles: [],
-                    link: '/rutinas/volumen'
+                    link: '/volumen'
                 },
                 {
                     title: 'Definición',
                     subtitles: [],
-                    link: '/rutinas/definicion'
+                    link: '/definicion'
                 },
             ]
         };

@@ -39,10 +39,6 @@ a{
 }
 
 a:hover{
-  color: #FF4500;
-}
-
-router-link:hover {
-  color: #FF4500;
+  color: #707070;
 }
 </style>

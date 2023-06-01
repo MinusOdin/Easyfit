@@ -26,9 +26,26 @@ const router = createRouter({
             component: Inicio
          },
         {
-             path: '/nutricion',
-             name: 'Nutricion',
-             components: {default: EasyfitNutricion, nutricionContent: NutricionInicio}
+            path: '/nutricion',
+            name: 'Nutricion',
+            components: EasyfitNutricion,
+            children: [
+                {
+                    path: '',
+                    name: 'NutricionInicio',
+                    component: NutricionInicio
+                },
+                /*{
+                    path: '/carbohidratos',
+                    name: 'NutricionCarbohidratos',
+                    component: NutricionCarbohidratos
+                },
+                {
+                    path: '/proteinas',
+                    name: 'NutricionProteinas',
+                    component: Nutricionproteinas
+                }*/
+            ]
         },
         {
             path: '/ejercicios',
