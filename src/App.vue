@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import GlobalNavigator from './components/GlobalNavigator.vue'
-import EasyfitFooter from './components/EasyfitFooter.vue'
+import GlobalNavigator from './components/mainComponents/GlobalNavigator.vue'
+import EasyfitFooter from './components/mainComponents/EasyfitFooter.vue'
 
 export default {
   name: 'App',

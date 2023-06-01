@@ -1,21 +1,35 @@
 // Vue Router import
 import {createRouter, createWebHashHistory} from 'vue-router';
 
-// Components import
+// Easyfit main components import
 import Test from './components/TestPerfil.vue';
 import Perfil from './components/PerfilView.vue';
-import Inicio from './components/EasyfitInicio.vue';
-import RutinasInicio from './components/RutinasInicio.vue';
-import RutinasVolumen from './components/RutinasVolumen.vue';
-import EasyfitRutinas from './components/EasyfitRutinas.vue';
-import NutricionInicio from './components/NutricionInicio.vue';
-import EjerciciosFuerza from './components/EjerciciosFuerza.vue';
-import EasyfitNutricion from './components/EasyfitNutricion.vue';
-import EjerciciosInicio from './components/EjerciciosInicio.vue';
-import EasyfitEjercicios from './components/EasyfitEjercicios.vue';
-import RutinasDefinicion from './components/RutinasDefinicion.vue';
-import EjerciciosResistencia from './components/EjerciciosResistencia.vue';
-import EjerciciosExplosividad from './components/EjerciciosExplosividad.vue';
+import Inicio from './components/mainComponents/EasyfitInicio.vue';
+import EasyfitRutinas from './components/mainComponents/EasyfitRutinas.vue';
+import EasyfitNutricion from './components/mainComponents/EasyfitNutricion.vue';
+import EasyfitEjercicios from './components/mainComponents/EasyfitEjercicios.vue';
+
+// Rutinas components import
+import RutinasInicio from './components/rutinas/RutinasInicio.vue';
+import RutinasVolumen from './components/rutinas/RutinasVolumen.vue';
+import RutinasDefinicion from './components/rutinas/RutinasDefinicion.vue';
+
+
+// Ejercicios components import
+import EjerciciosFuerza from './components/ejercicios/EjerciciosFuerza.vue';
+import EjerciciosInicio from './components/ejercicios/EjerciciosInicio.vue';
+import EjerciciosResistencia from './components/ejercicios/EjerciciosResistencia.vue';
+import EjerciciosExplosividad from './components/ejercicios/EjerciciosExplosividad.vue';
+
+
+// Nutricion components import
+import NutricionAgua from './components/nutricion/NutricionAgua.vue';
+import NutricionGrasas from './components/nutricion/NutricionGrasas.vue';
+import NutricionInicio from './components/nutricion/NutricionInicio.vue';
+import NutricionVitaminas from './components/nutricion/NutricionVitaminas.vue';
+import NutricionProteinas from './components/nutricion/NutricionProteinas.vue';
+import NutricionCarbohidratos from './components/nutricion/NutricionCarbohidratos.vue';
+
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -25,17 +39,17 @@ const router = createRouter({
             name: 'Inici',
             component: Inicio
          },
-        {
+         {
             path: '/nutricion',
             name: 'Nutricion',
-            components: EasyfitNutricion,
+            component: EasyfitNutricion,
             children: [
                 {
                     path: '',
                     name: 'NutricionInicio',
                     component: NutricionInicio
                 },
-                /*{
+                {
                     path: '/carbohidratos',
                     name: 'NutricionCarbohidratos',
                     component: NutricionCarbohidratos
@@ -43,8 +57,23 @@ const router = createRouter({
                 {
                     path: '/proteinas',
                     name: 'NutricionProteinas',
-                    component: Nutricionproteinas
-                }*/
+                    component: NutricionProteinas
+                },
+                {
+                    path: '/vitaminas',
+                    name: 'NutricionVitaminas',
+                    component: NutricionVitaminas
+                },
+                {
+                    path: '/grasas',
+                    name: 'NutricionGrasas',
+                    component: NutricionGrasas
+                },
+                {
+                    path: '/agua',
+                    name: 'NutricionAgua',
+                    component: NutricionAgua
+                }
             ]
         },
         {

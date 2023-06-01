@@ -4,7 +4,7 @@
 
         <!-- Que es Easyfit -->
         <div class="row my-3 m-0 py-3 px-5" style="text-align: left;">
-        <img class="col-sm-4 rounded ms-1 p-0" src="../assets/man.jpg" alt="squad_man">
+        <img class="col-sm-4 rounded ms-1 p-0" src="../../assets/man.jpg" alt="squad_man">
         <div class="col-sm-7 ms-5">
             <h2>Que es Easyfit</h2>
             <p>{{ this.lorem_ipsum_large }}</p>
@@ -19,7 +19,7 @@
             <p>{{ this.lorem_ipsum_large }}</p>
             <a id="button1" href="#" class="btn btn-light border rounded-pill my-2" style="width: 12ch;">Crear perfil</a>
         </div>
-        <img class="col-sm-4 rounded ms-5 p-0" src="../assets/Squad_man.jpg" alt="squad_man">
+        <img class="col-sm-4 rounded ms-5 p-0" src="../../assets/Squad_man.jpg" alt="squad_man">
         </div>
 
         <!-- KeyPoints -->
@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import EasyfitBanner from './EasyfitBanner.vue'
-import KeypointsCards from './KeypointsCards.vue'
+import EasyfitBanner from '../EasyfitBanner.vue'
+import KeypointsCards from '../KeypointsCards.vue'
 
 export default {
     name:'EasyfitInicio',
@@ -51,6 +51,7 @@ export default {
     data: function() {
         return {
             lorem_ipsum_large: '',
+            lorem_ipsum_mid: ''
         }
     }
 }
