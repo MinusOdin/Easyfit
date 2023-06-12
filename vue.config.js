@@ -4,5 +4,5 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/EasyFit.github.io/' : '/'
+  publicPath:  '/EasyFit.github.io/'
 }
