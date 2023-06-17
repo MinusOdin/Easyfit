@@ -7,3 +7,6 @@ para añadir el build a gh-pages
 si te dice que esta por detras (sale error) 
 > git push origin --delete gh-pages
 i volveis a hacer el git subtree push ...
+
+si te dice que esta up to date
+> git subtree push --prefix dist origin gh-pages
