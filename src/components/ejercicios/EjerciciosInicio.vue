@@ -2,30 +2,30 @@
     <div class="container-fluid">
         <div class="row">
             <div class="card-group my-5">
-                <div class="card">
+                <router-link to="/squat" class="card">
                     <img src="https://www.sportlife.es/uploads/s1/77/98/52/1/sentadilla-con-rebote.jpeg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Sentadilla con salto</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
                         <button class="btn btn-primary rounded-circle">+</button>
                     </div>
-                </div>
-                <div class="card">
+                </router-link>
+                <router-link to="/flexion" class="card">
                     <img src="https://i.blogs.es/cf9678/clapping/1366_2000.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Flexiones con impulso</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
                         <button class="btn btn-primary rounded-circle">+</button>
                     </div>
-                </div>
-                <div class="card">
+                </router-link>
+                <router-link to="/salto" class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhS3ZKKUljAxLfLRDI9x0dFha_T3KYhrk4ZA&usqp=CAU" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Salto vertical</h5>
                         <p class="card-text">{{ this.textoPrueba }}</p>
                         <button class="btn btn-primary rounded-circle">+</button>
                     </div>
-                </div>
+                </router-link>
                 <div class="card">
                     <img src="https://risbelmagazine.es/wp-content/uploads/2023/03/como-hacer-sentadilla-bulgara-tecnica-cuadriceps.jpg" class="card-img-top">
                     <div class="card-body">

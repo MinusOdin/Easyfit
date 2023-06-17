@@ -22,6 +22,9 @@ import EjerciciosResistencia from './components/ejercicios/EjerciciosResistencia
 import EjerciciosExplosividad from './components/ejercicios/EjerciciosExplosividad.vue';
 // Ejercicios especificos
 import EjercicioSquat from './components/ejercicios/ejercicios_epecificos/EjercicioSquat';
+import EjercicioFlexion from './components/ejercicios/ejercicios_epecificos/EjercicioFlexion';
+import EjercicioSalto from './components/ejercicios/ejercicios_epecificos/EjercicioSalto';
+
 
 
 // Nutricion components import
@@ -111,6 +114,16 @@ const router = createRouter({
             path: '/squat',
             name: 'EjercicioSquat',
             component: EjercicioSquat
+        },
+        {
+            path: '/flexion',
+            name: 'EjercicioFlexion',
+            component: EjercicioFlexion
+        },
+        {
+            path: '/salto',
+            name: 'EjercicioSalto',
+            component: EjercicioSalto
         },
         {
             path: '/rutinas',
