@@ -20,6 +20,8 @@ import EjerciciosFuerza from './components/ejercicios/EjerciciosFuerza.vue';
 import EjerciciosInicio from './components/ejercicios/EjerciciosInicio.vue';
 import EjerciciosResistencia from './components/ejercicios/EjerciciosResistencia.vue';
 import EjerciciosExplosividad from './components/ejercicios/EjerciciosExplosividad.vue';
+// Ejercicios especificos
+import EjercicioSquat from './components/ejercicios/ejercicios_epecificos/EjercicioSquat';
 
 
 // Nutricion components import
@@ -76,6 +78,7 @@ const router = createRouter({
                 }
             ]
         },
+        //articulos nutricion
         {
             path: '/ejercicios',
             name: 'Ejercicios',
@@ -102,6 +105,12 @@ const router = createRouter({
                     component: EjerciciosResistencia
                 }
             ]
+        },
+        //ejercicios individuales
+        {
+            path: '/squat',
+            name: 'EjercicioSquat',
+            component: EjercicioSquat
         },
         {
             path: '/rutinas',

@@ -25,14 +25,8 @@
         <!-- KeyPoints -->
         <div class="row my-3 p-0">
         <h2>Conceptos Clave</h2>
-        <key-point class="col-sm-4" :title="'Rutinas'" :text="this.lorem_ipsum_mid"></key-point>
-        <key-point class="col-sm-4" :title="'Nutrición'" :text="this.lorem_ipsum_mid"></key-point>
-        <key-point class="col-sm-4" :title="'Salud'" :text="this.lorem_ipsum_mid"></key-point>
-        </div>
-        <div class="row m-0 p-0">
-        <key-point class="col-sm-4" :title="'Volumen'" :text="this.lorem_ipsum_mid"></key-point>
-        <key-point class="col-sm-4" :title="'Repeticiones'" :text="this.lorem_ipsum_mid"></key-point>
-        <key-point class="col-sm-4" :title="'Series'" :text="this.lorem_ipsum_mid"></key-point>
+        <router-link to="/ejercicios"><key-point class="col-sm-4" :title="'Fitness'" :text="this.lorem_ipsum_mid"></key-point></router-link>
+        <router-link to="/nutricion"><key-point class="col-sm-4" :title="'Nutrición'" :text="this.lorem_ipsum_mid"></key-point></router-link>
         </div>
     </article>
 </template>

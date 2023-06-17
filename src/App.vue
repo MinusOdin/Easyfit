@@ -25,6 +25,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Helvetica, serif;
   -webkit-font-smoothing: antialiased;
@@ -41,4 +42,5 @@ a{
 a:hover{
   color: #707070;
 }
+
 </style>
