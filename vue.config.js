@@ -4,5 +4,5 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  publicPath:  '/Easyfit/'
+  publicPath: process.env.NODE_ENV === "production" ? "/Easyfit/" : "/",
 }
