@@ -34,7 +34,8 @@ import NutricionInicio from './components/nutricion/NutricionInicio.vue';
 import NutricionVitaminas from './components/nutricion/NutricionVitaminas.vue';
 import NutricionProteinas from './components/nutricion/NutricionProteinas.vue';
 import NutricionCarbohidratos from './components/nutricion/NutricionCarbohidratos.vue';
-
+// Nutricio Articles
+import GrasasSaturadas from './components/nutricion/nutricion_especificos/NutricionGrasasSaturadas.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -82,6 +83,11 @@ const router = createRouter({
             ]
         },
         //articulos nutricion
+        {
+            path: '/grasaSat',
+            name: 'GrasasSaturadas',
+            component: GrasasSaturadas,
+        },
         {
             path: '/ejercicios',
             name: 'Ejercicios',

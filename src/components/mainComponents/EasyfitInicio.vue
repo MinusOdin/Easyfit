@@ -1,5 +1,5 @@
 <template><!-- Landing Page -->
-    <article class="row container-fluid m-0 p-0">
+    <article class="container-fluid m-0 p-0">
         <easyfit-banner class="row"></easyfit-banner>
 
         <!-- Que es Easyfit -->

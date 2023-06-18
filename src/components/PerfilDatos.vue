@@ -56,4 +56,15 @@
     },
   };
   </script>
+
+<style>
+  template {
+    text-align: center;
+    margin: auto;
+  }
+
+  input {
+    text-align: center;
+  }
+</style>
   

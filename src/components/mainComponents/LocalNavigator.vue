@@ -44,4 +44,8 @@ nav {
 .highlight {
     color: #FF4500;
 }
+
+ul {
+    text-align: left;
+}
 </style>
